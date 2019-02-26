@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ylz.MainActivity"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <!--文本框-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingTop="3px"
+            android:text="请输入手机号码!"
+            android:textColor="#0a0a0a"
+            android:textSize="27dp" />
+        <!--文本框-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="注册意味着你同意服务条款"
+            android:textColor="#c4c7c7"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:background="#e1e1e1"
+                    android:gravity="center"
+                    android:minWidth="60dp"
+                    android:text="+86"
+                    android:textSize="25sp" />
+                <!--输入框-->
+                <EditText
+                    android:id="@+id/edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#e1e1e1"
+                    android:width="1dp"
+                    android:hint="请输入电话号码..."
+                    android:maxLength="11"
+                    android:padding="10dp"
+                    android:textColor="#c7c7c7" />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/notification_main_column"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#e1e1e1"
+                    android:gravity="center"
+                    android:minWidth="60dp"
+                    android:text="验证码"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#e1e1e1"
+
+                    android:hint="请输入验证码..."
+                    android:maxLength="6"
+                    android:padding="10dp"
+                    android:textColor="#c7c7c7" />
+            </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/biankuang"
+                    android:padding="10dp"
+                    android:text="重新发送30s"
+                    android:gravity="center"
+                    android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2f75f0"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="注册"
+            android:textColor="@drawable/tv_color_orgen"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/register_user_protocol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:text="《服务协议》"
+            android:textColor="#5dd9f5"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
